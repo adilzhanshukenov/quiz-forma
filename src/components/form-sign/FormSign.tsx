@@ -31,33 +31,33 @@ const FormSign = () => {
     }
   }, []);
 
-  const sendLead = async () => {
-    const webhookUrl =
-      "https://ozatoptics.bitrix24.kz/rest/8128/mdebsthzi8nahcma/crm.lead.add.json";
+  // const sendLead = async () => {
+  //   const webhookUrl =
+  //     "https://ozatoptics.bitrix24.kz/rest/8128/mdebsthzi8nahcma/crm.lead.add.json";
 
-    const leadData = {
-      fields: {
-        TITLE: "Новая заявка с сайта",
-        NAME: formData.name,
-        PHONE: formData.phone,
-        CHILD_AGE: formData.child_age,
-      },
-      params: { REGISTER_SONET_EVENT: "Y" },
-    };
+  //   const leadData = {
+  //     fields: {
+  //       TITLE: "Новая заявка с сайта",
+  //       NAME: formData.name,
+  //       PHONE: formData.phone,
+  //       CHILD_AGE: formData.child_age,
+  //     },
+  //     params: { REGISTER_SONET_EVENT: "Y" },
+  //   };
 
-    try {
-      const response = await fetch(webhookUrl, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(leadData),
-      });
+  //   try {
+  //     const response = await fetch(webhookUrl, {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify(leadData),
+  //     });
 
-      const result = await response.json();
-      console.log("Ответ AMO:", result);
-    } catch (error) {
-      console.error("Ошибка отправки лида:", error);
-    }
-  };
+  //     const result = await response.json();
+  //     console.log("Ответ AMO:", result);
+  //   } catch (error) {
+  //     console.error("Ошибка отправки лида:", error);
+  //   }
+  // };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
