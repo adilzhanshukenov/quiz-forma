@@ -1,0 +1,45 @@
+.main-app {
+  width: 100vw;
+  height: 100vh;
+}
+
+.button-main {
+  width: 185px;
+  background-color: rgb(4, 191, 75);
+  color: white;
+  height: 60px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary {
+  width: 250px;
+  background-color: rgb(41, 155, 220);
+  color: white;
+  height: 70px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: rgb(35, 123, 173);
+  border-color: rgb(35, 123, 173);
+}
+
+.button-primary:active {
+  border-color: rgb(180, 23, 180);
+}
+
+.button-main:hover {
+  background-color: rgb(7, 155, 86);
+  border-color: rgb(7, 155, 86);
+}
+
+.button-main:active {
+  border-color: rgb(20, 233, 134);
+}
+
+.page {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}

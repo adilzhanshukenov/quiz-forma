@@ -1,0 +1,60 @@
+.header {
+    height: 70px;
+    padding: 15px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#call-button-icon {
+    display: none;
+}
+
+.call-button {
+    background-color: rgb(41, 155, 220);
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.call-button:hover {
+    background-color: rgb(35, 123, 173);
+    border-color: rgb(35, 123, 173);
+}
+
+.call-button:active {
+    border-color: rgb(180, 23, 180);
+}
+
+.whatsapp-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 768px) {
+
+    #whatsapp-word {
+        display: none;
+    }
+
+    #call-button-icon {
+        display: block;
+        height: 35px;
+        width: 35px;
+    }
+
+    .call-button {
+        display: none;
+    }
+
+    .phone-word {
+        display: none;
+    }
+}
